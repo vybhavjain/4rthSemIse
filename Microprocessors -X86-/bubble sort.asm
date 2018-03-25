@@ -1,6 +1,6 @@
 Assume cs:code,ds:data
 data segment
-        x db 10h,05h,03h,15h,01h	; bytes again, try urself for words
+        x db 10h,05h,03h,15h,01h	
         n dw n-x
 data ends
 
@@ -12,8 +12,8 @@ start:
         mov bx,n
         dec bx		; no. of passes required
 next_pass:
-        mov cx,bx		; no. of comparisons in a pass = no. of passes remaining including that pass
-        mov ah,00	; a flag, guess why?
+        mov cx,bx	; no. of comparisons in a pass = no. of passes remaining including that pass
+        mov ah,00	
         lea si,x
 next_comp:
         mov al,[si]
@@ -26,7 +26,7 @@ do_nothing:
         inc si
         loop next_comp
         cmp ah, 0
-        je finish		; I think an efficient sort, what do you say?
+        je finish		
         dec bx
         jnz next_pass
 finish:
