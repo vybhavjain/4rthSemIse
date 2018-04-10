@@ -40,7 +40,3 @@ int dfs(int a[20][20],int n,int visited[20],int source)
         }
     }
 }
-
-, or
-Mohammed Minhaas
-minhaasmohammed@gmail.com
