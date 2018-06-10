@@ -15,7 +15,7 @@ void heapify(int h[],int n)
   {
    j=2*k;
    if(j<n1)
-    if(h[j]<h[j++])
+    if(h[j]<h[j+1])
       j=j+1;
    if(v>=h[j])
        heap=1;
