@@ -32,7 +32,7 @@ void main()
      }
    if(visited[u]==0||visited[v]==0)
    { 
-     printf(" \n edge %d \t %d -> %d =%d \n",ne++,a,v,min);
+     printf(" \n edge %d \t %d -> %d =%d \n",ne++,a,b,min);
      min_cost+=min;
      visited[b]=1;
    }   
