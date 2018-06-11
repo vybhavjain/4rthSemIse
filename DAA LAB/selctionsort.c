@@ -14,21 +14,19 @@ double cpu_time;
 start=clock();
 for(i=0;i<=n-2;i++)
 {
-min=a[i];
-for(j=i+1;j<=n-(i+1);j++)
+min=i;
+for(j=i+1;j<=n-1;j++)
 {
-if(a[j]>a[min])
-{
-temp=a[min];
+if(a[j]<a[min])
+min=j;
+}
+ temp=a[min];
 a[min]=a[i];
 a[i]=temp;
-}
-}
 }
 end=clock();
 cpu_time=((double)(end-start))/CLOCKS_PER_SEC;
 printf("time is %f",cpu_time);
-
 }
 
 
