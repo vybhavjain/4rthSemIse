@@ -1,0 +1,30 @@
+a-Software Problems
+b-Hardware Problems
+
+1 a) Search for a key in an array of bytes/words using Binary Search technique.
+  b)Count and display number of 1‟s in the input given using switches of a logical controller interface.
+
+2 a) Sort the given array of bytes/words using Bubble Sort technique.
+  b) Implement i) Ring Counter ii) BCD up-down Counter using logic controller interface.
+
+3 a) Check if the input string matches the password stored earlier. After three attempts the system should stop responding to any further transactions.
+   b) Rotate the stepper motor clockwise/anticlockwise or in both directions by x degrees [x will be specified at the time of experiment].
+
+4 a) Reverse a given string and check if it is palindrome with/without using string instructions.
+
+5 a) Find the factorial of a number using recursive procedure.
+
+6 a) Display „X‟ at the center of the screen with the specific attributes [Attributes will be specified at the time of experiment].
+  b) Store row number, column number and scan code of key pressed in Keypad interface.
+
+7 a) Generate first n Fibonacci numbers.
+  b) Implement a simple calculator for add/subtract operations using Keypad interface.
+
+8 a) Display system time.
+  b) Display FIRE and HELP alternatively n number of times on seven segment display interface.
+
+9 a) Display decimal counter to count from 00-99 at the center of the screen.
+  b) Display n character message on seven segment display in a rolling fashion.
+
+10 a) Open, read and close a file. Display the contents of the file on screen.
+   b) Move the elevator to the first request floor and bring it back to ground floor in elevator interface. The elevator need not respond to the intermediate requests in both directions.
