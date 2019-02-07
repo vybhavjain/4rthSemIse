@@ -12,4 +12,4 @@ gcc filename.c
 The questions can be found [here](https://github.com/vybhavjain/4rthSemIse/blob/master/DAA%20LAB/Questions.txt).
 
 ### For MP all codes have been run and executed on MASM (X-86).
-The questions can be found [here](https://github.com/vybhavjain/4rthSemIse/blob/master/Microprocessors%20-X86-/Questions.txt)
+The questions can be found [here](https://github.com/vybhavjain/4rthSemIse/blob/master/Microprocessors%20-X86-/Questions.txt).
