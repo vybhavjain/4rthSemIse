@@ -1,12 +1,12 @@
-Assume cs:code,ds:data
+assume cs:code,ds:data
 
-Data segment
-    Fibo db 10 dup(?)
-    N db 05h    ; no. of Fibonacci numbers to be genetared
-Data ends
+data segment
+    fibo db 10 dup(?)
+    n db 05h    ; no. of Fibonacci numbers to be genetared
+data ends
 
-Code segment
-Start:
+code segment
+start:
     mov ax, data
     mov ds, ax
     

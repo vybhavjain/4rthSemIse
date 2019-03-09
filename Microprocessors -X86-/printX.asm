@@ -14,9 +14,9 @@ start:
         mov bl, 8ch
         mov cl,1
         mov ah,9
-        int10h
+        int 10h
 
-        mov ah,7
+        mov ah,07h
         int 21h
 
         mov ah,4ch
