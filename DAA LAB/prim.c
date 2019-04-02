@@ -1,7 +1,8 @@
 #include<stdio.h>
+
 int a,b,u,v,n,i,j,ne=1,source;
 int visited[20]={0},min,mincost=0,cost[20][20];
-void main()
+int main()
 {
  printf("Enter the number of nodes\n");
  scanf("%d",&n);
@@ -35,5 +36,6 @@ void main()
   }
   cost[a][b]=cost[b][a]=999;
  }
- printf("Minimun cost=%d\n",mincost);
+ printf("Minimum cost=%d\n",mincost);
+return 0;
 }
