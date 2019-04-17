@@ -20,8 +20,7 @@ rpt:
         out dx,al
         call delay
         ror al,1
-        ror al,1
-
+        
         push ax
         mov ah,06h
         mov dl,0ffh
