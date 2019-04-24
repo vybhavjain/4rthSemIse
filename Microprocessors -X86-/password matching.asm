@@ -7,14 +7,14 @@ int 21h
 endm
 
 data segment
-pwd1  db “god123”
-len1 db (len – pwd1)
+pwd1  db 'god123' ;set your own password
+len1 db len1-pwd1
 pwd2 db 10 dup (?)
 len2 db ?
-mesg1 db  0ah,0dh,“passwords matched$”
-mesg2 db  0ah,0dh, “passwords did not match$”
-mesg3 db  0ah,0dh,“enter password:$”
-mesg4 db  0ah,0dh,”exceeded 3 attempts. keyboard locked$”
+mesg1 db  0ah,0dh,"Passwords matched$"
+mesg2 db  0ah,0dh,"Passwords did not match$"
+mesg3 db  0ah,0dh,"Enter password:$"
+mesg4 db  0ah,0dh,"Exceeded 3 attempts. Keyboard locked$"
 data ends
 
 code segment
@@ -44,7 +44,7 @@ again:     mov ah,8
            mov [si],al
            inc si
            inc bh
-           mov dl, ‘*’
+           mov dl,"*"
            mov ah, 2
            int 21h
            jmp again
