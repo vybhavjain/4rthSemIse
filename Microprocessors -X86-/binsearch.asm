@@ -3,8 +3,8 @@ data segment
 	a db 10h,20h,30h,40h,50h	; Sorting only bytes.
 	n db n-a
 	key db 20h
-	msg1 db "key not found$"
-	msg2 db "key found at position: "
+	msg1 db "Key not found$"
+	msg2 db "Key found at position: "
 	pos db ?,"$"			; $ indicates till where message is supposed to be printed
 data ends
 
@@ -26,7 +26,7 @@ again:
         mov si,ax
         mov bl,[si]			; [mid] in bl
         cmp bl,key
-        jae loc				; [mid]  >=  key ?
+        jae loc1				; [mid]  >=  key ?
         inc al				; no, low = mid+1, to search in second half
         jmp again
 loc1:
