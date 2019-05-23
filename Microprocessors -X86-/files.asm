@@ -24,15 +24,13 @@ code segment
      mov cx,00
      lea dx,fname2
      int 21h
-     jc next
      disp msg1
-next:
+
      mov ah,41h
      lea dx,fname1
      int 21h
-     jc finish
      disp msg2
-finish:
+
      mov ah,4ch
      int 21h
 code ends
